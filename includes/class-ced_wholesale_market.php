@@ -161,7 +161,7 @@ class Ced_wholesale_market {
 		// This is a hook for add setting tab on woocommerce setting page which name is wholesale
 		$this->loader->add_filter( 'woocommerce_settings_tabs_array', $plugin_admin, 'ced_nav_menu_wholesale_market', 50, 9 );
 		// This is a hook for add sab menus of setting tab which name is general and inventory
-		$this->loader->add_action( 'woocommerce_sections_wholesale', $plugin_admin, 'output_sections' );
+		$this->loader->add_action( 'woocommerce_sections_wholesale', $plugin_admin, 'ced_add_submenus_wholesale_sections' );
 		// This is a hook for display sab menus setting
 		 $this->loader->add_action( 'woocommerce_settings_wholesale', $plugin_admin, 'output' );
 		// This is a hook for save all custom settings which name is general and Inventory

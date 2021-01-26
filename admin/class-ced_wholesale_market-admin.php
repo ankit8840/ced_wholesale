@@ -125,13 +125,13 @@ class Ced_Wholesale_Market_Admin {
 
 
 	/**
-	 * Output_sections
+	 * Ced_add_submenus_wholesale_sections
 	 * This is a function for add sub menus of setting which name is general and inventory
 	 *
 	 * @since 1.0.0
 	 * @return void
 	 */
-	public function output_sections() {
+	public function ced_add_submenus_wholesale_sections() {
 		global $current_section;
 
 			$sections = array(
@@ -177,7 +177,7 @@ class Ced_Wholesale_Market_Admin {
 				array(
 
 					array(
-						'name' => __( 'myplugin_section2_settings', 'my-textdomain' ),
+						'name' => __( 'Wholesale_General_settings', 'my-textdomain' ),
 						'type' => 'title',
 						'desc' => '',
 						'id'   => 'wholesale_group1_options',
@@ -197,7 +197,7 @@ class Ced_Wholesale_Market_Admin {
 					),
 
 					array(
-						'name' => __( 'myplugin_section2_settings', 'my-textdomain' ),
+						'name' => __( 'Wholesale_General_settings', 'my-textdomain' ),
 						'type' => 'title',
 						'desc' => '',
 						'id'   => 'wholesale_group2_options',
@@ -244,7 +244,7 @@ class Ced_Wholesale_Market_Admin {
 				array(
 
 					array(
-						'name' => __( 'myplugin_section2_settings', 'my-textdomain' ),
+						'name' => __( 'Wholesale_Inventory_settings', 'my-textdomain' ),
 						'type' => 'title',
 						'desc' => '',
 						'id'   => 'wholesale_inventory_section_setting',
